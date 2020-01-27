@@ -69,9 +69,17 @@ footer p {
 
 /* ---- Header Section */
 /* Wrap Header Text */
+
+.wrap header h1 {
+    font-weight: bold;
+    color: rgba(254, 254, 254, 0.934);
+    text-shadow: 2px 2px  2px rgba(43, 42, 42, 0.587);
+}
+
 .wrap header p {
     font-weight: bold;
     color: rgba(254, 254, 254, 0.934);
+    text-shadow: 2px 2px  3px rgba(29, 29, 29, 0.587);
 }
 
 
