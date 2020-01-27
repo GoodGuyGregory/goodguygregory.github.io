@@ -79,7 +79,7 @@ footer p {
 .wrap header p {
     font-weight: bold;
     color: rgba(254, 254, 254, 0.934);
-    text-shadow: 2px 2px  3px rgba(29, 29, 29, 0.587);
+    text-shadow: 2px 2px  3px rgb(29, 29, 29);
 }
 
 
