@@ -1,13 +1,12 @@
 /* ================================= 
     Base Element Styles
 ==================================== */
-* {
-    box-sizing: border-box;
-}
 
 body {
 	line-height: 1.6;
     color: rgba(82, 71, 71, 0.934);
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -24,6 +23,11 @@ header {
     
 
 }
+
+h2 {
+    margin-top: 35px;
+    font-size: 35px;
+}   
 
 footer p {
     padding: 2.4em 0;
@@ -44,6 +48,65 @@ footer p {
 /* ========================== 
     Base Layout Styles:
 ==============================*/
+
+.wrap {
+    flex-grow: 1;
+}
+
+/* ========================== 
+    Components: 
+==============================*/
+
+/* Project Section */
+.projects {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 35px;
+    flex-basis: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+
+    transition: opacity .5s;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: #fff;
+    overflow: hidden;
+}
+
+.project-overlay h3 {
+    margin-top: 0;
+}
+
+.project button {
+    margin-top: 25px;
+    align-self: center;
+}
+
+/* Project-image */
+
+.project img {
+    width: 350px;
+    height: 200px;
+    transition: transform .5s;
+}
+
+.project:hover  img{
+    transform: scale(1.1) rotate(5deg) translateY(-20px);
+}
+/* Project Details */
+
 
 
 /* ---- Layout Containers */
