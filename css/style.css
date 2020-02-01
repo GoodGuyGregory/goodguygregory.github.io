@@ -33,7 +33,13 @@ footer p {
 .me-img {
     height: 300px;
     border-radius: 50%;
+    transition: transform .5s;
 }
+
+.me-img:hover {
+    transform: scale(1.1) rotate(5deg) translateY(-20px);
+}
+
 
 /* ========================== 
     Base Layout Styles:
