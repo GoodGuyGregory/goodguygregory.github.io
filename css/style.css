@@ -16,12 +16,11 @@ a {
     font-weight: bold;
 }
 header {
-    /* background-color: #73EEDC; */
-    background-image: url(/img/maxresdefault.jpg);
+    background-color: #73EEDC;
+    background-image: url(/img/maxresdefault.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    
-
+    z-index: 1;
 }
 
 h2 {
@@ -53,6 +52,10 @@ footer p {
     flex-grow: 1;
 }
 
+.sketch-holder {
+    margin: 0;
+    overflow: hidden;
+}
 /* ========================== 
     Components: 
 ==============================*/
