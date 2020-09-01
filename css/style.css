@@ -10,11 +10,6 @@ body {
 
 }
 
-a { 
-	color: rgb(132, 223, 124);
-    text-decoration: none;
-    font-weight: bold;
-}
 header {
     background-color: #73EEDC;
     background-image: url(/img/maxresdefault.jpg); 
@@ -37,6 +32,8 @@ footer p {
     text-align: center;
 }
 
+/* Hero-Section */
+
 .me-img {
     height: 300px;
     border-radius: 50%;
@@ -46,6 +43,29 @@ footer p {
 .me-img:hover {
     transform: scale(1.1) rotate(5deg) translateY(-20px);
 }
+
+/* Nav-Section */
+
+.main-nav {
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #A39594;
+}
+
+.main-nav li {
+    padding: 45px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: aqua;
+
+}
+
+.main-nav li:hover {
+    background-color: rgba(208, 40, 188, 0.701);
+}
+
 
 
 /* ========================== 
@@ -142,6 +162,14 @@ footer p {
 }
 
 /* ---- Page Elements  */
+
+/* Footer-Styles */
+
+.footer-link { 
+	color: rgb(132, 223, 124);
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* ---- Header Section */
 /* Wrap Header Text */
