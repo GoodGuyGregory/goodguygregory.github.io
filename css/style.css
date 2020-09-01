@@ -63,8 +63,11 @@ footer p {
 }
 
 .main-nav li:hover {
-    background-color: rgba(208, 40, 188, 0.701);
+    background: rgba(208, 40, 188, 0.701);
+    border-radius: 5px;
+    color: #ffff;
 }
+
 
 
 
