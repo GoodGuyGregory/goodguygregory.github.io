@@ -65,7 +65,7 @@ footer p {
 
 .main-nav li:hover {
     transform: scale(1.1) rotate(-5deg) translateX(10px);
-    background: rgba(118, 19, 179, 0.701);
+    background: rgba(210, 23, 210, 0.495);
     border-radius: 45%;
     color: #ffff;
     cursor: pointer;
