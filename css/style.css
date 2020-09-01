@@ -53,19 +53,22 @@ footer p {
 }
 
 .main-nav li {
-    padding: 45px;
+    padding: 55px;
 }
 
 .main-nav a {
     text-decoration: none;
-    color: aqua;
+    color:rgb(132, 223, 124);
+    font-size: 1.4em;
 
 }
 
 .main-nav li:hover {
-    background: rgba(208, 40, 188, 0.701);
-    border-radius: 5px;
+    transform: scale(1.1) rotate(-5deg) translateX(10px);
+    background: rgba(118, 19, 179, 0.701);
+    border-radius: 45%;
     color: #ffff;
+    cursor: pointer;
 }
 
 
