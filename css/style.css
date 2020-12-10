@@ -12,14 +12,18 @@ body {
 
 header {
     background-color: #73EEDC;
-    background-image: url(/img/maxresdefault.jpg); 
+    background-image: url(/img/DSC_0057.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
     z-index: 1;
 }
 
+header p {
+    font-size: 1.4em;
+}
 h1 {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 h2 {
