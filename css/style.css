@@ -10,21 +10,20 @@ body {
 
 }
 
-a { 
-	color: rgb(132, 223, 124);
-    text-decoration: none;
-    font-weight: bold;
-}
 header {
     background-color: #73EEDC;
-    background-image: url(/img/maxresdefault.jpg); 
+    background-image: url(/img/DSC_0057.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
     z-index: 1;
 }
 
+header p {
+    font-size: 1.4em;
+}
 h1 {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 h2 {
@@ -37,6 +36,8 @@ footer p {
     text-align: center;
 }
 
+/* Hero-Section */
+
 .me-img {
     height: 300px;
     border-radius: 50%;
@@ -46,6 +47,35 @@ footer p {
 .me-img:hover {
     transform: scale(1.1) rotate(5deg) translateY(-20px);
 }
+
+/* Nav-Section */
+
+.main-nav {
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #A39594;
+}
+
+.main-nav li {
+    padding: 55px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color:rgb(132, 223, 124);
+    font-size: 1.4em;
+
+}
+
+.main-nav li:hover {
+    transform: scale(1.1) rotate(-5deg) translateX(10px);
+    background: rgba(210, 23, 210, 0.495);
+    border-radius: 45%;
+    color: #ffff;
+    cursor: pointer;
+}
+
+
 
 
 /* ========================== 
@@ -142,6 +172,14 @@ footer p {
 }
 
 /* ---- Page Elements  */
+
+/* Footer-Styles */
+
+.footer-link { 
+	color: rgb(132, 223, 124);
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* ---- Header Section */
 /* Wrap Header Text */
