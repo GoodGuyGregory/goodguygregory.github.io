@@ -11,12 +11,12 @@ body {
 }
 
 header {
-    background-color: #73EEDC;
+    /* background-color: #73EEDC;
     background-image: url(/img/DSC_0057.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
-    z-index: 1;
+    background-position: center bottom; */
+    /* z-index: 1; */
 }
 
 header p {
