@@ -37,7 +37,6 @@ function draw() {
     textSize(68);
     text("Greg Witt", 40, 435);
     textSize(35)
-    text("Software developer located in Portland Oregon", 40, 635);
 
     // add time to the equation:
     var time = millis() / 1000;
