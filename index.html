@@ -7,8 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="p5.js"></script>
     <script src="sketch.js"></script>
+    <script src="./js/vanilla.js"></script>
+    <script type="text/javascript">
+        
+        document.addEventListener( "DOMContentLoaded", showDefaultActive());
+      // triggered when the window is loaded..
+        // window.onload = showDefaultActive();
+
+        function showDefaultActive() {
+            console.log('showing active');
+            // show default of chosen category
+            document.getElementById(projectType).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+     </script>
     <title>Greg Witt</title>
 </head>
 
@@ -16,201 +33,220 @@
     <div class="wrap">
         <div id="sketch-holder">
         </div>
-        <h2>Projects</h2>
-
-        <div class="projects">
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/Fourtic/tree/master"> <img src="img/fourtic-game.jpeg"
-                        alt="Fourtic"></a>
-                <h3>Fourtic Game Player Model</h3>
-                <p>
-                    Fourtic a game, which is composed of two player symbols on a 4 x 4 grid. The Adversarial AI player is intended to always win. 
-                    Load the game in java and try your hand at attempting to beat the AI.
+        
+        <div class="about_me">
+                <p>An accomplished and precise senior software developer with a proven track record in crafting robust web applications across various development frameworks.
+                    Armed with over 5 years of experience in translating complex business requirements into scalable, high-performance solutions, 
+                    I am capable of leveraging a diverse ecosystem of web technologies to deliver exceptional user experiences. 
+                    My passion for learning and all things science launched me into the realm of machine learning, 
+                    where I am actively engaged in building innovative projects to enhance product capabilities and drive business outcomes. 
+                    In my free time, I enjoy robotics and low-level IoT coding, 
+                    particularly with Arduino, where I have contributed to projects involving sensor integration, data collection, 
+                    and real-time control systems. I also enjoy 3D printing, and fusion360 for designing models. Lastly, I enjoy riding my bike through the beautiful city of Portland Oregon.
+                    Where I am an advocate for transit and mobility for all citizens. 
                 </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/heart-anomalies/tree/main"> <img src="img/heart_anomalies.jpg"
-                        alt="Heart-Anomaly-Image"></a>
-                <h3>Heart Anomaly Detection Model</h3>
-                <p>
-                    I developed and tested an AI model to determine based on features which heart image data is has a defect. The model was able to determine with over 70% accuracy which cases required
-                    further analysis to determine abnormalities within the heart.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/authorship/tree/master"> <img src="img/mary_jane_shelly.jpeg"
-                        alt="Authorship Project"></a>
-                <h3>Authorship Model</h3>
-                <p>
-                    Can an AI model be developed to determine who wrote a specific work? 
-                    I tested this by developing an AI model to determine authorship between Jane Austen and Mary Shelly. I was able develop a model with 80% accuracy, in determining who the correct hidden author.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/Oregon_National_Forests/blob/main/db/initialize_tables.sql"> <img src="img/mckenzie_river_trail.jpeg"
-                        alt="National Forests DB"></a>
-                <h3>Oregon National Forests DB</h3>
-                <p>I designed a database implementation that I will host locally to support fullstack hiking application. This postGresSQL repo features the implemented tables to support the backend architecture of a locals Alltrails.
-                    I plan on adding more tables and features to the data as I continue developing the application
-                    
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/Community-Data-DiscoTech-Portland-2023/resilience"> <img src="img/open_disco_tech.jpg"
-                        alt="OPEN DISCOTECH"></a>
-                <h3>Open Data Discotech 2024</h3>
-                <p>Worked in a group setting to collect and present open data from the Smart City PDX project. The object of our presentation was to highlight many of Portland's vulnerable areas.
-                    Our group collected open source city data to determine areas of highest threat during natural disasters, such as heatwaves, wildfires, winter storms and toxic blooms along the willamette. 
-                    the project highlighted key infastructure metrics needed to improve the resilience of the cities vulnerable populations
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/Rush_Hour/tree/master"> <img src="img/rush_hour.jpg"
-                        alt="Rush Hour Game"></a>
-                <h3>Rush Hour AI Solver</h3>
-                <p>After playing Rush hour I became obessed with the game. I purchased a copy and decided to build an AI to solve this game.
-
-                    I implemented a Java program to build and solve various levels of difficultly. Simply supply a game grid and the program will read the files and determine the best path with the minimum
-                    number of moves to maximize the score per game board.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/codewars_katas"> <img src="img/codewars-katas.png"
-                        alt="CodeWars Katas Repo"></a>
-                <h3>Codewars Kata Application</h3>
-                <p>Create a constant stream of Katas in my five languages of development Java, Javascript, C++, Kotlin,
-                    and Python.
-
-                    I have built a community tool using jQuery and Bootstrap for developing a new kata
-                    selection and deployed to github-pages for everyday use. I usually knockout two Katas a week.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/IUS-CS/p422-project-GoodGuyGregory"> <img src="img/harvest-tycoon.png"
-                        alt="Harvest Tycoon"></a>
-                <h3>Harvest Tycoon</h3>
-                <p>Built a Full-Stack social networking application with MongoDB, Express, and Angular. to present a
-                    plant growing notifications system for people who trade succulents and other farming.
-                    I also added Google's Material API for color schemes and animations
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://goodguygregory.github.io/moon-phase/"> <img src="img/moon-phase.png"
-                        alt="Moon Phase UI Image"></a>
-                <h3>Moon Phase </h3>
-                <p>Produced a lunar phases application which utilizes features from the Unixtime, and Farmsense APIs to
-                    retrieve
-                    current unixtime, and the current lunar phase,
-
-                    this application is built with P5Js and utilizes methods of both P5 and native Javascript for each
-                    request. It also
-                    offers the ability for the deployable application to be easily configured for an SMTP server for
-                    email reminders to clients.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://goodguygregory.github.io/hacktoberfest-signin/"> <img src="img/hacktoberfest_2020.png"
-                        alt="Hacktober Fest 2020"></a>
-                <h3>HacktoberFest 2020 Signin Application</h3>
-                <p>Constructed a Full-Stack Angular application to construct a data mapping of Github user's languages
-                    for Hacktoberfest 2020. I used the Github API and DEVExtreme Charts API for visualizations.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/password-locker"> <img src="img/password-locker.png"
-                        alt="Password Locker"></a>
-                <h3>Password Locker</h3>
-                <p>Python project repo which contains projects that feature password generations from mersenne twister
-                    random number.
-                    and a utility tool for storing passwords for local access
-                    generator
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/p422-codes/blob/master/setup.sh"> <img
-                        src="img/mean-stack-script.png" alt="MEAN Stack Automation Script"></a>
-                <h3>MEAN Stack Automation Scripting</h3>
-                <p>Constructed an automation script for MEAN stack development for Mac and PC. For my Professor. This
-                    application script downloads the required dev dependencies for working in a MEAN Stack,
-                    It installs via Homebrew MongoDB, Angular, Express, Webstorm, or VS Code for the perfect environment
-                    to code in.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/musictrainer"><img src="img/band-app.jpg"
-                        alt="musician practicing with full band"></a>
-                <h3>Music Trainer Application</h3>
-                <p>Developed a Kotlin Android application for helping musicians with busy schedules practice and
-                    compose
-                    songs.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://goodguygregory.github.io/magic-scroll/"><img src="img/magic-scroll.png"
-                        alt="musical taste page"></a>
-                <h3>Magic Scroll</h3>
-                <p>Developed a responsive sass Page that features my favorite music and desires for my vinyl collection.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://goodguygregory.github.io/p5-particles/"> <img src="img/particle-matrix.png"
-                        alt="Particle Library Image"></a>
-                <h3>Particle Matrix Generator</h3>
-                <p>P5.js Project that generates a Particle Matrix with incredible colors for stunning
-                    visualizations.
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/Trauma-Troopers/Nursing-App/"><img src="img/nursing-app.jpg"
-                        alt="nursing-app nurse drawing blood"></a>
-                <h3>Indiana University Nursing Application</h3>
-                <p>Full Stack Vue Application for Assisting Undergraduate Nursing Students at Indiana University
-                    Southeast. Complete with Firebase Authentication and Hosting</p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/GoodGuyGregory/giphy-search-app"><img src="img/giphy-app.png"
-                        alt="React Giphy Search App"></a>
-                <h3>React Giphy Search App</h3>
-                <p>React application which uses the Giphy API to Fetch Gifs from a Search Query. Easily Tested and
-                    Deployed locally through Github.</p>
-            </div>
-            <div class="project">
-                <a href="https://truesdellbuilders.com/"><img src="img/truesdellcustombuilders.jpg"
-                        alt="demo-project"></a>
-                <h3>Truesdell Custom Builders</h3>
-                <p>Worked on the Development Team on this site, Built layout and styles for the main site. Clayton
-                    Truesdell is a Louisville builder and designer for commercial and private properties.</p>
-            </div>
-            <div class="project">
-                <a href="https://uniquelibrary.com/"><img src="img/uniqueLibraries.jpg" alt="demo-project"></a>
-                <h3>Unique Libraries</h3>
-                <p>Worked with on the Development Team that built this Wordpress site for Unique Libraries</p>
-            </div>
-            <div class="project">
-                <a href="img/discoverHomepage.png" target="blank"><img src="img/discoverHeader.jpg"
-                        alt="discover homepage"></a>
-                <h3>Discover New Albany Development</h3>
-                <p>Worked on the development and Layout of the Discover New Albany site.Developed through Wordpress
-                    which was pitched to the City of New Albany. The project was canceled due to budget constraints
-                    from
-                    the city.</p>
-            </div>
-            <div class="project">
-                <a href="https://goodguygregory.github.io/doggo-app/"> <img src="img/dogg-app.png"
-                        alt="Dogg Application"></a>
-                <h3>Doggo-App with Dog API</h3>
-                <p>Built a web application that will GET random dog images from the Dog API through Asynchronous REST
-                    implementation.
-                </p>
-            </div>
         </div>
+        
+        <div class="project_header">
+            <h2>Projects</h2>
+        </div>
+      
+        
+
+        <div>
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'web_dev')">Web Development</button>
+                <button class="tablinks" onclick="openTab(event, 'artificial_intel')">Artificial Intelligence</button>
+                <button class="tablinks" onclick="openTab(event, 'mobile_development')">Mobile Development</button>
+                <button class="tablinks" onclick="openTab(event, 'personal_projects')">Personal Projects</button>
+                <button class="tablinks" onclick="openTab(event, 'certs')">Certifications</button>
+            </div>
+            
+            <div id="web_dev" class="tab_content">
+                <div class="projects">
+                    <div class="project">
+                    <a href="https://pours.avnet.com/pours/external/login"><img src="img/Avnet-Warehouse.jpg" alt="pours"></a>
+                    <h3>POURS</h3>
+                    <p>Developed a full stack Angular and Java backend application to support the entire shipping and logistics system for Avnet Electronics. This rebuild application alone will gross Avnet around 2 billion dollars a year</p>
+                </div>
+                    <div class="project">
+                        <a href="https://uniquelibrary.com/"><img src="img/uniqueLibraries.jpg" alt="demo-project"></a>
+                        <h3>Unique Libraries</h3>
+                        <p>Worked on a development team to design and built this Wordpress site for Unique Libraries.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://truesdellbuilders.com/"><img src="img/truesdellcustombuilders.jpg"
+                                alt="demo-project"></a>
+                        <h3>Truesdell Custom Builders</h3>
+                        <p>Worked on the development team to build and design this protfolio site for Clayton
+                            Truesdell is a Louisville contractor and designer who specializes in commercial and private properties.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Trauma-Troopers/Nursing-App/"><img src="img/nursing-app.jpg"
+                                alt="nursing-app nurse drawing blood"></a>
+                        <h3>Indiana University Nursing Application</h3>
+                        <p>Full Stack Vue application for assisting Uundergraduate nursing students at Indiana University
+                            Southeast. Complete with Firebase authentication and hosting</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/IUS-CS/p422-project-GoodGuyGregory"> <img src="img/harvest-tycoon.png"
+                                alt="Harvest Tycoon"></a>
+                        <h3>Harvest Tycoon</h3>
+                        <p>Built a full stack social networking application with MongoDB, Express, and Angular. to present a
+                            plant growing notifications system for people who trade succulents and other farming.
+                            I also added Google's Material API for color schemes and animations
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="img/discoverHomepage.png" target="blank"><img src="img/discoverHeader.jpg"
+                                alt="discover homepage"></a>
+                        <h3>Discover New Albany Development</h3>
+                        <p>Worked on the development and layout of the Discover New Albany site.
+                            which was pitched to the City of New Albany for a rebranding of the city in 2018. The project was canceled due to budget constraints
+                            from the city.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://goodguygregory.github.io/magic-scroll/"><img src="img/magic-scroll.png"
+                                alt="musical taste page"></a>
+                        <h3>Magic Scroll</h3>
+                        <p>Developed a responsive sass Page that features my favorite music and desires for my vinyl collection.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="https://goodguygregory.github.io/hacktoberfest-signin/"> <img src="img/hacktoberfest_2020.png"
+                                alt="Hacktober Fest 2020"></a>
+                        <h3>HacktoberFest 2020 Signin Application</h3>
+                        <p>Constructed a Full-Stack Angular application to construct a data mapping of Github user's languages
+                            for Hacktoberfest 2020. I used the Github API and DEVExtreme Charts API for visualizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="artificial_intel" class="tab_content">
+                <div class="projects">
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/Fourtic/tree/master"> <img src="img/fourtic-game.jpeg"
+                                alt="Fourtic"></a>
+                        <h3>Fourtic Game Player Model</h3>
+                        <p>
+                            Fourtic a game, which is composed of two player symbols on a 4 x 4 grid. The Adversarial AI player is intended to always win. 
+                            Load the game in java and try your hand at attempting to beat the AI.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/heart-anomalies/tree/main"> <img src="img/heart_anomalies.jpg"
+                                alt="Heart-Anomaly-Image"></a>
+                        <h3>Heart Anomaly Detection Model</h3>
+                        <p>
+                            I developed and tested an AI model to determine based on features which heart image data is has a defect. The model was able to determine with over 70% accuracy which cases required
+                            further analysis to determine abnormalities within the heart.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/authorship/tree/master"> <img src="img/mary_jane_shelly.jpeg"
+                                alt="Authorship Project"></a>
+                        <h3>Authorship Model</h3>
+                        <p>
+                            Can an AI model be developed to determine who wrote a specific work? 
+                            I tested this by developing an AI model to determine authorship between Jane Austen and Mary Shelly. I was able develop a model with 80% accuracy, in determining who the correct hidden author.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/Rush_Hour/tree/master"> <img src="img/rush_hour.jpg"
+                                alt="Rush Hour Game"></a>
+                        <h3>Rush Hour AI Solver</h3>
+                        <p>After playing Rush hour I became obessed with the game. I purchased a copy and decided to build an AI to solve this game.
+        
+                            I implemented a Java program to build and solve various levels of difficultly. Simply supply a game grid and the program will read the files and determine the best path with the minimum
+                            number of moves to maximize the score per game board.
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div id="mobile_development" class="tab_content">
+                <div class="projects">
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/musictrainer"><img src="img/band-app.jpg"
+                                alt="musician practicing with full band"></a>
+                        <h3>Music Trainer Application</h3>
+                        <p>Developed a Kotlin Android application for helping musicians with busy schedules practice and
+                            compose
+                            songs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="certs" class="tab_content">
+                <div class="projects">
+                    <div class="project">
+                        <a> <img src="img/certifications/Vuejs_certification.png"
+                                alt="Vue JS Certification"></a>
+                        <h3>Vue & Firebase Certification</h3>
+                        <p>
+                            Certification training for the Vue javascript framework. I worked and developed applications that integrated Google Firebase. 
+                            I also built several full stack applications that featured API integrations and scaling nosql project backends.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a> <img src="img/certifications/postgreSQL Certification.png" alt="PostGreSQL"></a>
+                        <h3>SQL Database Certification</h3>
+                        <p>
+                            This certification was awarded after completing my PostgreSQL course work. I worked through several real world scenarios and troubleshooted issues involving, building, and designing scalable database schemas for large applications.
+                        </p>
+                    </div>        
+                </div>
+            </div>
+    
+    
+            <div id="personal_projects" class="tab_content">
+                <div class="projects">
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/Oregon_National_Forests/blob/main/db/initialize_tables.sql"> <img src="img/mckenzie_river_trail.jpeg"
+                                alt="National Forests DB"></a>
+                        <h3>Oregon National Forests DB</h3>
+                        <p>I designed a database implementation that I will host locally to support fullstack hiking application. This postGresSQL repo features the implemented tables to support the backend architecture of a locals Alltrails.
+                            I plan on adding more tables and features to the data as I continue developing the application
+                            
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Community-Data-DiscoTech-Portland-2023/resilience"> <img src="img/open_disco_tech.jpg"
+                                alt="OPEN DISCOTECH"></a>
+                        <h3>Open Data Discotech 2024</h3>
+                        <p>Worked in a group setting to collect and present open data from the Smart City PDX project. The object of our presentation was to highlight many of Portland's vulnerable areas.
+                            Our group collected open source city data to determine areas of highest threat during natural disasters, such as heatwaves, wildfires, winter storms and toxic blooms along the willamette. 
+                            the project highlighted key infastructure metrics needed to improve the resilience of the cities vulnerable populations
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/GoodGuyGregory/codewars_katas"> <img src="img/codewars-katas.png"
+                                alt="CodeWars Katas Repo"></a>
+                        <h3>Codewars Kata Application</h3>
+                        <p>Create a constant stream of Katas in my five languages of development Java, Javascript, C++, Kotlin,
+                            and Python.
+    
+                            I have built a community tool using jQuery and Bootstrap for developing a new kata
+                            selection and deployed to github-pages for everyday use. I usually knockout two Katas a week.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        
+
     </div>
 
 
 
 
-    <footer>
-        <p>&copy;2020 Louisville Developer <a class="footer-link"
+    <footer class="main-footer">
+        <p>&copy;2020 Portland, Oregon Developer <a class="footer-link"
                 href="https://github.com/GoodGuyGregory">GoodGuyGregory</a></p>
     </footer>
 </body>
