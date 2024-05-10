@@ -61,3 +61,7 @@ function draw() {
         i++;
     }
 }
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }

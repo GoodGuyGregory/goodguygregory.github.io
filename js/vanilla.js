@@ -1,3 +1,4 @@
+
 function openTab(event, projectType) {
     // Declare all variables
     let i, tablinks;
