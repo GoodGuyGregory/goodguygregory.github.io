@@ -9,7 +9,7 @@ let img;
 // fonts:
 let font
 function preload() {
-    img = loadImage("img/Headshot.png");
+    img = loadImage("img/goodguygregory.png");
     newFont = loadFont('fonts/Oxygen-Bold.ttf')
 }
 
@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-    image(img, 500, 100, 400, 500);
+    image(img, 470, 120, 450, 450);
     fill(255);
     stroke(0);
     textFont(newFont);
