@@ -14,22 +14,11 @@
     <script src="sketch.js"></script>
     <script src="./js/vanilla.js"></script>
     <script type="text/javascript">
-        
-        document.addEventListener( "DOMContentLoaded", showDefaultActive());
-      // triggered when the window is loaded..
-        // window.onload = showDefaultActive();
-
-        function showDefaultActive() {
-            console.log('showing active');
-            // show default of chosen category
-            document.getElementById(projectType).style.display = "block";
-            event.currentTarget.className += " active";
-        }
      </script>
     <title>Greg Witt</title>
 </head>
 
-<body>
+<body onload="javascript:collapseTabs()">
     <div class="wrap">
         <div id="sketch-holder">
         </div>
@@ -203,9 +192,43 @@
             <div id="certs" class="tab_content">
                 <div class="projects">
                     <div class="project">
-                        <a> <img src="img/certifications/fundamentals-of-agents.png"
+                        <a> <img src="img/certifications/mcp-course-certification.png"
+                                alt="HuggingFace MCP Fundamentals Certification"></a>
+                        <h3>Huggingface MCP Certification</h3>
+                        <p>
+                            Over this Final Certification I was able to Produce an Automation Tool with Claude Code, which integrated Slack Notifications, Github Actions, and Claude Code's Reasoning to produce an efficient AI Pull Request assistant for Github
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a> <img src="img/certifications/mcp-fundamentals-certification.png"
+                                alt="HuggingFace MCP Fundamentals Certification"></a>
+                        <h3>Huggingface MCP Fundamentals Certification</h3>
+                        <p>
+                            Completed the Fundamentals of Anthropic's Model Context Protocol MCP course. Focusing on Gradio Client Development. 
+                            the MCP SDK for Python and Javascript and Tiny-Agents with PlayWright for Automation Tasks
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a> <img src="img/certifications/hf-agents-cert.png"
+                                alt="HuggingFace Agents Certification"></a>
+                        <h3>Huggingface Agents Certification</h3>
+                        <p>
+                            I successfully completed the GAIA Agent's Certification using LlamaIndex an Agentic AI Framework to create a General Purpose Agent.
+                            I also learned and leverage my skills to build multiple Agents with LlamaIndex, SmolAgents, and LangGraph.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a> <img src="img/certifications/dev-apps-with-langchain.png"
+                                alt="Langchain Applications Developer Certification"></a>
+                        <h3>Langchain Applications Developer Certification</h3>
+                        <p>
+                        I earned this accomplishment after working with several courses that taught me the skills to leverage LangChain to develop AI Agents, and RAG Applications. I have already worked with LangChain in my other courses and personally. But this course educated me on the whole suite and ecosystem LangChain can offer. I learned to debug and track logs with LangSmith. I also learned about "WorkFlows" with LangGraph. I hope to apply these skills to more personal and enterprise projects
+                        </p>
+                    </div>
+                    <div class="project">
+                        <a> <img src="img/certifications/fundamentals-of-agents-certification.png"
                                 alt="HugginFace Fundamentals of Agents"></a>
-                        <h3>Huggingface's Fundamentals of Agents Certification</h3>
+                        <h3>Huggingface Fundamentals of Agents Certification</h3>
                         <p>
                             From the first unit of the Huggingface Agents Course, I learned about the complexities of Agentic Systems Frameworks for Developing Agents, TAO (Thought-Action-Observation), COT (Chain of Thought) and A2A (Agent to Agent) and MCP (Model Context Protocol).
                             I also dipped into the basics of working with SmolAgents, Huggingface's framework for developing Agents. This course also taught me several important distinctions to make when choosing when an agent is appropriate and when to avoid them.
@@ -214,13 +237,13 @@
                     <div class="project">
                         <a> <img src="img/certifications/associate-ai-engineer-for-developers.png"
                                 alt="Datacamp's Associate AI Engineer for Developers"></a>
-                        <h3>Datacamp's Associate AI Engineer for Developers Certification</h3>
+                        <h3>Datacamp Associate AI Engineer for Developers Certification</h3>
                         <p>
                             I dedicated 30 hours to intensive training, focusing on leveraging APIs from OpenAI. During this period, I developed expertise in building Retrieval-Augmented Generation (RAG) applications using Langchain and Pinecone. Additionally, I honed my skills in developing and fine-tuning models with Huggingface. Furthermore, I gained substantial knowledge about ChromaDB, enhancing my overall proficiency in advanced data management and retrieval techniques.
                         </p>
                     </div>
                     <div class="project">
-                        <a> <img src="img/certifications/neo4j-certification.png"
+                        <a> <img src="img/certifications/neo4j-certfication.png"
                                 alt="Neo4J Certification"></a>
                         <h3>Neo4j Certification</h3>
                         <p>
@@ -318,7 +341,7 @@
 
 
     <footer class="main-footer">
-        <p>&copy;2020 Portland, Oregon Developer <a class="footer-link"
+        <p>&copy;2020 Portland, Oregon Developer | <a class="footer-link"
                 href="https://github.com/GoodGuyGregory">GoodGuyGregory</a></p>
     </footer>
 </body>
