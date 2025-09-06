@@ -1,4 +1,13 @@
 
+function collapseTabs() {
+
+    tabcontent = document.getElementsByClassName("tab_content");
+    for (let i = 1; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+}
+
+
 function openTab(event, projectType) {
     // Declare all variables
     let i, tablinks;
