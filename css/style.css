@@ -107,8 +107,9 @@ Tabs:
 
  /* Style the tab */
  .tab {
+    margin-top: -80px;
     overflow: hidden;
-    background-color: #293a25;
+    background-color: rgba(2, 0, 36, 1);
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -140,7 +141,7 @@ Tabs:
     padding: 6px 12px;
     border: 2px solid #f9f9f9; 
     border-radius: 5px;
-    background-color: #293a25;
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(27, 79, 27, 1) 67%, rgba(38, 82, 2, 1) 100%);
   } 
 
 /* Project Section */
@@ -204,7 +205,8 @@ Tabs:
 /* ---- Layout Containers */
 
 .wrap {
-    background-color: #293a25;
+    background: #020024;
+   background: linear-gradient(348deg,rgba(2, 0, 36, 1) 0%, rgba(54, 54, 133, 1) 35%, rgba(9, 133, 11, 1) 100%);
 }
 
 .container {
@@ -229,7 +231,6 @@ Tabs:
 }
 
 .main-footer {
-    padding: 2em 0;
     background: #f9f9f9;
     text-align: center;
     background-color: #262528;
