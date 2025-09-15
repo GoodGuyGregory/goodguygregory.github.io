@@ -109,12 +109,10 @@ Tabs:
  .tab {
     margin-top: -80px;
     overflow: hidden;
-    background-color: rgba(2, 0, 36, 1);
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
-    background-color: inherit;
     float: left;
     font-size: 20px;
     border-radius: 10px 10px 0px 0px;
@@ -123,6 +121,7 @@ Tabs:
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    background-color: rgba(2, 0, 36, 1);
   }
   
   /* Change background color of buttons on hover */
@@ -133,6 +132,7 @@ Tabs:
   /* Create an active/current tablink class */
   .tab button.active {
     background-color: #7cdba7;
+    text-shadow: 1px 1px 0px #5b5beb;
   }
   
   /* Style the tab content */
@@ -149,6 +149,7 @@ Tabs:
     display: flex;
     margin: 0px  0px 100px 50px;
     flex-direction: row;
+    font-size: 42px;
 }
 
 .projects {
